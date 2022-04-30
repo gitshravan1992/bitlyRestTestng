@@ -1,0 +1,1148 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-04-30T06:27:45.930Z",
+        "line": 5,
+        "name": "To test following methods",
+        "description": "\t\t\tGET/groups/{group_guid}\n\t\t\tGET/groups/{group_guid}/bitlinks/{sort}\n\t\t\tPOST/bitlinks",
+        "id": "to-test-services-in-https://bitly.com;to-test-following-methods",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2022-04-30T06:27:46.057Z",
+        "line": 22,
+        "name": "To validate status code of  GET/groups/{group_guid}",
+        "description": "",
+        "id": "to-test-services-in-https://bitly.com;to-validate-status-code-of--get/groups/{group-guid};;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2221000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user has generated \"invalid\" token for Authorization",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.stepsdef.authorization(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 723000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user performs  GET/groups/{group_guid}",
+            "match": {
+              "location": "stepDefination.stepsdef.getGroups()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user retrieves response status code as 403",
+            "match": {
+              "arguments": [
+                {
+                  "val": "403",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefination.stepsdef.validateStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-30T06:27:49.040Z",
+        "line": 23,
+        "name": "To validate status code of  GET/groups/{group_guid}",
+        "description": "",
+        "id": "to-test-services-in-https://bitly.com;to-validate-status-code-of--get/groups/{group-guid};;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2392000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user has generated \"ee5bc095f2c67d11c579b9750dd6fcef64bfe554\" token for Authorization",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ee5bc095f2c67d11c579b9750dd6fcef64bfe554",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.stepsdef.authorization(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 978000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user performs  GET/groups/{group_guid}",
+            "match": {
+              "location": "stepDefination.stepsdef.getGroups()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user retrieves response status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefination.stepsdef.validateStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-30T06:27:52.427Z",
+        "line": 39,
+        "name": "To validate response body of  GET/groups/{group_guid}",
+        "description": "",
+        "id": "to-test-services-in-https://bitly.com;to-validate-response-body-of--get/groups/{group-guid};;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1361000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user has generated \"ee5bc095f2c67d11c579b9750dd6fcef64bfe554\" token for Authorization",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ee5bc095f2c67d11c579b9750dd6fcef64bfe554",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.stepsdef.authorization(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 725000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user performs  GET/groups/{group_guid}",
+            "match": {
+              "location": "stepDefination.stepsdef.getGroups()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user retrieves all details for a group",
+            "match": {
+              "location": "stepDefination.stepsdef.retreiveDetails()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user validates whether json body \"guid\" has value \"Bm4n5pZfPiT\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "guid",
+                  "offset": 34
+                },
+                {
+                  "val": "Bm4n5pZfPiT",
+                  "offset": 51
+                }
+              ],
+              "location": "stepDefination.stepsdef.validateDetails(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-30T06:27:54.551Z",
+        "line": 40,
+        "name": "To validate response body of  GET/groups/{group_guid}",
+        "description": "",
+        "id": "to-test-services-in-https://bitly.com;to-validate-response-body-of--get/groups/{group-guid};;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1012000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user has generated \"ee5bc095f2c67d11c579b9750dd6fcef64bfe554\" token for Authorization",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ee5bc095f2c67d11c579b9750dd6fcef64bfe554",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.stepsdef.authorization(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 445000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user performs  GET/groups/{group_guid}",
+            "match": {
+              "location": "stepDefination.stepsdef.getGroups()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user retrieves all details for a group",
+            "match": {
+              "location": "stepDefination.stepsdef.retreiveDetails()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user validates whether json body \"name\" has value \"shravanbitly\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name",
+                  "offset": 34
+                },
+                {
+                  "val": "shravanbitly",
+                  "offset": 51
+                }
+              ],
+              "location": "stepDefination.stepsdef.validateDetails(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-30T06:27:56.034Z",
+        "line": 41,
+        "name": "To validate response body of  GET/groups/{group_guid}",
+        "description": "",
+        "id": "to-test-services-in-https://bitly.com;to-validate-response-body-of--get/groups/{group-guid};;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 991000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user has generated \"ee5bc095f2c67d11c579b9750dd6fcef64bfe554\" token for Authorization",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ee5bc095f2c67d11c579b9750dd6fcef64bfe554",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.stepsdef.authorization(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 451000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user performs  GET/groups/{group_guid}",
+            "match": {
+              "location": "stepDefination.stepsdef.getGroups()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user retrieves all details for a group",
+            "match": {
+              "location": "stepDefination.stepsdef.retreiveDetails()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user validates whether json body \"is_active\" has value \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "is_active",
+                  "offset": 34
+                },
+                {
+                  "val": "true",
+                  "offset": 56
+                }
+              ],
+              "location": "stepDefination.stepsdef.validateDetails(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-30T06:27:57.506Z",
+        "line": 57,
+        "name": "To validate status code of  GET/groups/{group_guid}/bitlinks/{sort}",
+        "description": "",
+        "id": "to-test-services-in-https://bitly.com;to-validate-status-code-of--get/groups/{group-guid}/bitlinks/{sort};;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1033000000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user has generated \"invalid\" token for Authorization",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.stepsdef.authorization(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 747000000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user performs  GET/groups/{group_guid}/bitlinks/{sort}",
+            "match": {
+              "location": "stepDefination.stepsdef.getSortGroups()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "user retrieves response status code as 403",
+            "match": {
+              "arguments": [
+                {
+                  "val": "403",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefination.stepsdef.validateStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-30T06:27:59.298Z",
+        "line": 58,
+        "name": "To validate status code of  GET/groups/{group_guid}/bitlinks/{sort}",
+        "description": "",
+        "id": "to-test-services-in-https://bitly.com;to-validate-status-code-of--get/groups/{group-guid}/bitlinks/{sort};;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1499000000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user has generated \"ee5bc095f2c67d11c579b9750dd6fcef64bfe554\" token for Authorization",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ee5bc095f2c67d11c579b9750dd6fcef64bfe554",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.stepsdef.authorization(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 762000000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user performs  GET/groups/{group_guid}/bitlinks/{sort}",
+            "match": {
+              "location": "stepDefination.stepsdef.getSortGroups()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "user retrieves response status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefination.stepsdef.validateStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-30T06:28:01.575Z",
+        "line": 73,
+        "name": "To validates response body of GET/groups/{group_guid}/bitlinks/{sort}",
+        "description": "",
+        "id": "to-test-services-in-https://bitly.com;to-validates-response-body-of-get/groups/{group-guid}/bitlinks/{sort};;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2737000000,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "user has generated \"ee5bc095f2c67d11c579b9750dd6fcef64bfe554\" token for Authorization",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ee5bc095f2c67d11c579b9750dd6fcef64bfe554",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.stepsdef.authorization(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 747000000,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "user performs  GET/groups/{group_guid}/bitlinks/{sort}",
+            "match": {
+              "location": "stepDefination.stepsdef.getSortGroups()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53000000,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "user gets list of bitlinks sorted by group",
+            "match": {
+              "location": "stepDefination.stepsdef.validateResponse_Sort()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "user validates whether json body \"sorted_links.id\" has value \"[bit.ly/3L8ojHm, bit.ly/3xTcl0J, bit.ly/3vwyizy]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sorted_links.id",
+                  "offset": 34
+                },
+                {
+                  "val": "[bit.ly/3L8ojHm, bit.ly/3xTcl0J, bit.ly/3vwyizy]",
+                  "offset": 62
+                }
+              ],
+              "location": "stepDefination.stepsdef.validateDetails(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-30T06:28:05.134Z",
+        "line": 74,
+        "name": "To validates response body of GET/groups/{group_guid}/bitlinks/{sort}",
+        "description": "",
+        "id": "to-test-services-in-https://bitly.com;to-validates-response-body-of-get/groups/{group-guid}/bitlinks/{sort};;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1047000000,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "user has generated \"ee5bc095f2c67d11c579b9750dd6fcef64bfe554\" token for Authorization",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ee5bc095f2c67d11c579b9750dd6fcef64bfe554",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.stepsdef.authorization(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 937000000,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "user performs  GET/groups/{group_guid}/bitlinks/{sort}",
+            "match": {
+              "location": "stepDefination.stepsdef.getSortGroups()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "user gets list of bitlinks sorted by group",
+            "match": {
+              "location": "stepDefination.stepsdef.validateResponse_Sort()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "user validates whether json body \"sorted_links.clicks\" has value \"[2, 1, 1]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sorted_links.clicks",
+                  "offset": 34
+                },
+                {
+                  "val": "[2, 1, 1]",
+                  "offset": 66
+                }
+              ],
+              "location": "stepDefination.stepsdef.validateDetails(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-30T06:28:07.189Z",
+        "line": 90,
+        "name": "To validate status code of  POST/bitlinks when body is not entered",
+        "description": "",
+        "id": "to-test-services-in-https://bitly.com;to-validate-status-code-of--post/bitlinks-when-body-is-not-entered;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1713000000,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "user has generated \"invalid\" token for Authorization",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.stepsdef.authorization(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 799000000,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "user performs POST/bitlinks",
+            "match": {
+              "location": "stepDefination.stepsdef.postResponse_bitlinks()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "user retrieves response status code as 403",
+            "match": {
+              "arguments": [
+                {
+                  "val": "403",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefination.stepsdef.validateStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-30T06:28:09.711Z",
+        "line": 91,
+        "name": "To validate status code of  POST/bitlinks when body is not entered",
+        "description": "",
+        "id": "to-test-services-in-https://bitly.com;to-validate-status-code-of--post/bitlinks-when-body-is-not-entered;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12603000000,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "user has generated \"ee5bc095f2c67d11c579b9750dd6fcef64bfe554\" token for Authorization",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ee5bc095f2c67d11c579b9750dd6fcef64bfe554",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.stepsdef.authorization(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 869000000,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "user performs POST/bitlinks",
+            "match": {
+              "location": "stepDefination.stepsdef.postResponse_bitlinks()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "user retrieves response status code as 422",
+            "match": {
+              "arguments": [
+                {
+                  "val": "422",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefination.stepsdef.validateStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-30T06:28:23.202Z",
+        "line": 108,
+        "name": "To validate status code of  POST/bitlinks when body is entered",
+        "description": "",
+        "id": "to-test-services-in-https://bitly.com;to-validate-status-code-of--post/bitlinks-when-body-is-entered;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1402000000,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "user has generated \"invalid\" token for Authorization",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.stepsdef.authorization(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 260000000,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "user has entered json body with below contents",
+            "match": {
+              "location": "stepDefination.stepsdef.setBodyjson(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "long_url",
+                  "https://www.elsevier.com/en-in"
+                ]
+              },
+              {
+                "cells": [
+                  "domain",
+                  "bit.ly"
+                ]
+              },
+              {
+                "cells": [
+                  "title",
+                  "Elsevier"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 506000000,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "user performs POST/bitlinks",
+            "match": {
+              "location": "stepDefination.stepsdef.postResponse_bitlinks()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "user retrieves response status code as 403",
+            "match": {
+              "arguments": [
+                {
+                  "val": "403",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefination.stepsdef.validateStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-30T06:28:25.387Z",
+        "line": 110,
+        "name": "To validate status code of  POST/bitlinks when body is entered",
+        "description": "",
+        "id": "to-test-services-in-https://bitly.com;to-validate-status-code-of--post/bitlinks-when-body-is-entered;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1222000000,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "user has generated \"ee5bc095f2c67d11c579b9750dd6fcef64bfe554\" token for Authorization",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ee5bc095f2c67d11c579b9750dd6fcef64bfe554",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.stepsdef.authorization(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "user has entered json body with below contents",
+            "match": {
+              "location": "stepDefination.stepsdef.setBodyjson(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "long_url",
+                  "https://www.elsevier.com/en-in"
+                ]
+              },
+              {
+                "cells": [
+                  "domain",
+                  "bit.ly"
+                ]
+              },
+              {
+                "cells": [
+                  "title",
+                  "Elsevier"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 461000000,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "user performs POST/bitlinks",
+            "match": {
+              "location": "stepDefination.stepsdef.postResponse_bitlinks()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "user retrieves response status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefination.stepsdef.validateStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-30T06:28:27.083Z",
+        "line": 132,
+        "name": "To validate response body of  POST/bitlinks",
+        "description": "",
+        "id": "to-test-services-in-https://bitly.com;to-validate-response-body-of--post/bitlinks;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1342000000,
+              "status": "passed"
+            },
+            "line": 119,
+            "name": "user has generated \"ee5bc095f2c67d11c579b9750dd6fcef64bfe554\" token for Authorization",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ee5bc095f2c67d11c579b9750dd6fcef64bfe554",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.stepsdef.authorization(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 120,
+            "name": "user has entered json body with below contents",
+            "match": {
+              "location": "stepDefination.stepsdef.setBodyjson(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "long_url",
+                  "https://www.elsevier.com/en-in"
+                ]
+              },
+              {
+                "cells": [
+                  "domain",
+                  "bit.ly"
+                ]
+              },
+              {
+                "cells": [
+                  "title",
+                  "Elsevier"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 771000000,
+              "status": "passed"
+            },
+            "line": 124,
+            "name": "user performs POST/bitlinks",
+            "match": {
+              "location": "stepDefination.stepsdef.postResponse_bitlinks()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46000000,
+              "status": "passed"
+            },
+            "line": 125,
+            "name": "a bitlink is created",
+            "match": {
+              "location": "stepDefination.stepsdef.creationBitlink()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7000000,
+              "status": "passed"
+            },
+            "line": 126,
+            "name": "user validates whether json body \"long_url\" has value \"https://www.elsevier.com/en-in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "long_url",
+                  "offset": 34
+                },
+                {
+                  "val": "https://www.elsevier.com/en-in",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefination.stepsdef.validateDetails(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-30T06:28:29.259Z",
+        "line": 133,
+        "name": "To validate response body of  POST/bitlinks",
+        "description": "",
+        "id": "to-test-services-in-https://bitly.com;to-validate-response-body-of--post/bitlinks;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000000,
+              "status": "passed"
+            },
+            "line": 119,
+            "name": "user has generated \"ee5bc095f2c67d11c579b9750dd6fcef64bfe554\" token for Authorization",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ee5bc095f2c67d11c579b9750dd6fcef64bfe554",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.stepsdef.authorization(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 120,
+            "name": "user has entered json body with below contents",
+            "match": {
+              "location": "stepDefination.stepsdef.setBodyjson(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "long_url",
+                  "https://www.elsevier.com/en-in"
+                ]
+              },
+              {
+                "cells": [
+                  "domain",
+                  "bit.ly"
+                ]
+              },
+              {
+                "cells": [
+                  "title",
+                  "Elsevier"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 700000000,
+              "status": "passed"
+            },
+            "line": 124,
+            "name": "user performs POST/bitlinks",
+            "match": {
+              "location": "stepDefination.stepsdef.postResponse_bitlinks()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45000000,
+              "status": "passed"
+            },
+            "line": 125,
+            "name": "a bitlink is created",
+            "match": {
+              "location": "stepDefination.stepsdef.creationBitlink()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 126,
+            "name": "user validates whether json body \"title\" has value \"Elsevier\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "title",
+                  "offset": 34
+                },
+                {
+                  "val": "Elsevier",
+                  "offset": 52
+                }
+              ],
+              "location": "stepDefination.stepsdef.validateDetails(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "To test services in https://bitly.com",
+    "description": "Prereq: User has created an account in bitly and also created several links",
+    "id": "to-test-services-in-https://bitly.com",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/bitlyapi.feature",
+    "tags": []
+  }
+]

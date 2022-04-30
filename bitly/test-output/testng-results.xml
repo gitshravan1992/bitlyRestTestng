@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="16" passed="16">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="47865" started-at="2022-04-30T07:14:37Z" finished-at="2022-04-30T07:15:25Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.testRunner@1dd4eda]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="47865" started-at="2022-04-30T07:14:37Z" finished-at="2022-04-30T07:15:25Z">
+      <class name="Runner.testRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runner.testRunner@1dd4eda]" name="setUpClass" is-config="true" duration-ms="3023" started-at="2022-04-30T12:44:37Z" finished-at="2022-04-30T12:44:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.testRunner@1dd4eda]" name="runScenario" duration-ms="689" started-at="2022-04-30T12:44:40Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-30T12:44:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To test following methods"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To test services in https://bitly.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.testRunner@1dd4eda]" name="runScenario" duration-ms="4352" started-at="2022-04-30T12:44:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-30T12:44:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate status code of  GET/groups/{group_guid}"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To test services in https://bitly.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.testRunner@1dd4eda]" name="runScenario" duration-ms="5724" started-at="2022-04-30T12:44:45Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-30T12:44:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate status code of  GET/groups/{group_guid}"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To test services in https://bitly.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.testRunner@1dd4eda]" name="runScenario" duration-ms="2113" started-at="2022-04-30T12:44:51Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-30T12:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate response body of  GET/groups/{group_guid}"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To test services in https://bitly.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.testRunner@1dd4eda]" name="runScenario" duration-ms="2677" started-at="2022-04-30T12:44:53Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-30T12:44:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate response body of  GET/groups/{group_guid}"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To test services in https://bitly.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.testRunner@1dd4eda]" name="runScenario" duration-ms="2257" started-at="2022-04-30T12:44:56Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-30T12:44:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate response body of  GET/groups/{group_guid}"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To test services in https://bitly.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.testRunner@1dd4eda]" name="runScenario" duration-ms="2218" started-at="2022-04-30T12:44:58Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-30T12:45:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate status code of  GET/groups/{group_guid}/bitlinks/{sort}"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To test services in https://bitly.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.testRunner@1dd4eda]" name="runScenario" duration-ms="2112" started-at="2022-04-30T12:45:00Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-30T12:45:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate status code of  GET/groups/{group_guid}/bitlinks/{sort}"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To test services in https://bitly.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.testRunner@1dd4eda]" name="runScenario" duration-ms="2973" started-at="2022-04-30T12:45:02Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-30T12:45:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validates response body of GET/groups/{group_guid}/bitlinks/{sort}"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To test services in https://bitly.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.testRunner@1dd4eda]" name="runScenario" duration-ms="1842" started-at="2022-04-30T12:45:05Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-30T12:45:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validates response body of GET/groups/{group_guid}/bitlinks/{sort}"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To test services in https://bitly.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.testRunner@1dd4eda]" name="runScenario" duration-ms="2407" started-at="2022-04-30T12:45:07Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-30T12:45:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate status code of  POST/bitlinks when body is not entered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To test services in https://bitly.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.testRunner@1dd4eda]" name="runScenario" duration-ms="3125" started-at="2022-04-30T12:45:10Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-30T12:45:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate status code of  POST/bitlinks when body is not entered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To test services in https://bitly.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.testRunner@1dd4eda]" name="runScenario" duration-ms="2284" started-at="2022-04-30T12:45:13Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-30T12:45:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate status code of  POST/bitlinks when body is entered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To test services in https://bitly.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.testRunner@1dd4eda]" name="runScenario" duration-ms="1869" started-at="2022-04-30T12:45:15Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-30T12:45:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate status code of  POST/bitlinks when body is entered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To test services in https://bitly.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.testRunner@1dd4eda]" name="runScenario" duration-ms="2278" started-at="2022-04-30T12:45:17Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-30T12:45:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate response body of  POST/bitlinks"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To test services in https://bitly.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.testRunner@1dd4eda]" name="runScenario" duration-ms="1954" started-at="2022-04-30T12:45:19Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-30T12:45:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate response body of  POST/bitlinks"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To test services in https://bitly.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runner.testRunner@1dd4eda]" name="tearDownClass" is-config="true" duration-ms="3892" started-at="2022-04-30T12:45:21Z" finished-at="2022-04-30T12:45:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.testRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

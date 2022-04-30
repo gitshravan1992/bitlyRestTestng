@@ -1,0 +1,16 @@
+
+API Testing for www.bitly.com
+Requirement:
+
+Java
+Opensource Libraries - RestAssured, Testng, extent report
+Maven - for Building project
+Junit - For execution and reporting
+TestScript - RestAssured - BDD - Gherkin syntax
+
+Execution Process
+
+Import this project in eclipse
+Right click on src\test\java\Runner\testRunner.java run as Testng Test
+
+Output location bitly\test-output\bitly\bitlyapi.html
